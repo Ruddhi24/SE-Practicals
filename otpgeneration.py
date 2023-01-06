@@ -8,9 +8,9 @@ import smtplib
 
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
-server.login('ruddhibhagat123@gmail.com','ofvtamacwuewibai')
+server.login('sender_emailid','password')
 otp = ''.join([str(random.randint(0,9)) for i in range(4)])
 msg="HELLO, YOUR GENERATED OTP IS "+str(otp)
-server.sendmail('ruddhibhagat123@gmail.com','hemangi.gavande29@gmail.com',msg)
+server.sendmail('sender_emailid','reciever_emailid',msg)
 server.quit()
 
