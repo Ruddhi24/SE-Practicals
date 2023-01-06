@@ -15,7 +15,7 @@ Senders_password= senders_data.password
 
 def sendersemail():
     server.starttls()
-    server.login("ruddhibhagat123@gmail.com",password="ofvtamacwuewibai")
+    server.login("sender_emaiid",password="")
 receivers_name=input("Please enter receiver's name: ")
 receivers_email=input("Please enter receiver's email: ")
 def recievers_email():
